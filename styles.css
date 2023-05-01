@@ -64,9 +64,10 @@ body {
 
 .app-container {
   height: 100%;
+  background-color: hsl(30, 38%, 92%);
 }
 .app-container .product-container {
-  height: 100%;
+  height: 85%;
   background-color: hsl(30, 38%, 92%);
   position: absolute;
   top: 50%;
@@ -88,6 +89,7 @@ body {
 }
 .app-container .product-container .product .product__content {
   padding: 15px 10px;
+  background-color: hsl(0, 0%, 100%);
 }
 .app-container .product-container .product .product__content .content__title {
   font-family: "Montserrat";
@@ -127,8 +129,8 @@ body {
   width: 100%;
   border-radius: 5px;
   padding: 5px 15px;
-  margin-top: 20px;
-  font-weight: 700;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */
