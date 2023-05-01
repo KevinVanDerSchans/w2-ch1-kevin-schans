@@ -20,5 +20,9 @@
   "homepage": "https://github.com/KevinVanDerSchans/w2-ch1-kevin-schans#readme",
   "dependencies": {
     "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1"
   }
 }
