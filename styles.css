@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.app-container {
+  height: 100%;
+}
+.app-container .product-container {
+  height: 100%;
+  background-color: hsl(30, 38%, 92%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3%;
+}
+.app-container .product-container .product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.app-container .product-container .product .product__image--img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3% 3% 0 0;
+}
+.app-container .product-container .product .product__content {
+  padding: 15px 10px;
+}
+.app-container .product-container .product .product__content .content__title {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+.app-container .product-container .product .product__content .content__subtitle {
+  font-family: "Fraunces";
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+.app-container .product-container .product .product__content .content__description {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+}
+.app-container .product-container .product .product__content .content__price {
+  display: flex;
+  padding-top: 15px;
+}
+.app-container .product-container .product .product__content .content__price .price {
+  padding-right: 15px;
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+  font-size: 1.5rem;
+}
+.app-container .product-container .product .product__content .content__price .price--crossed-out {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.6rem;
+  text-decoration: line-through;
+}
+.app-container .product-container .product .product__content .add-to-cart-button {
+  color: hsl(30, 38%, 92%);
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */

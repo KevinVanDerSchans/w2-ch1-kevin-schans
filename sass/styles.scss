@@ -3,7 +3,97 @@
 @import "responsive";
 
 
-.product-container {
-    height: 100%;
-}
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
 
+$dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+$primary-font: 'Montserrat';
+$secondary-font: 'Fraunces';
+
+
+
+.app-container {
+    height: 100%;
+
+    .product-container {
+        height: 100%;
+        background-color: $cream;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 3%;
+
+        .product {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            
+            .product__image--img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 3% 3% 0 0;
+            }
+
+            .product__content {
+                padding: 15px 10px;
+
+                .content__title {
+                    font-family: $primary-font;
+                    color: $dark-grayish-blue;
+                    letter-spacing: 1px;
+                    font-size: 0.8rem;
+                    padding-bottom: 10px;
+                }
+
+                .content__subtitle {
+                    font-family: $secondary-font;
+                    font-size: 1.2rem;
+                    padding-bottom: 15px;
+                }
+
+                .content__description {
+                    font-family: $primary-font;
+                    color: $dark-grayish-blue;
+                    font-size: 0.8rem;
+                }
+
+                .content__price {
+                    display: flex;
+                    padding-top: 15px;
+
+                    .price {
+                        padding-right: 15px;
+                        font-family: $secondary-font;
+                        color: $dark-cyan;
+                        font-size: 1.5rem;
+                    }
+
+                    .price--crossed-out {
+                        color: $dark-grayish-blue;
+                        font-size: 0.6rem;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .add-to-cart-button {
+                    color: $cream;
+                    background-color: $dark-cyan;
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 5px 15px;
+                    margin-top: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+
+        
+}
